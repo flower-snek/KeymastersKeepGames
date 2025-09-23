@@ -1,7 +1,10 @@
 # KeymastersKeepGames
 welcome to the semi-obscure puzzle game zone
+
 ⚠ = tagged as difficult
+
 🕓 = tagged as time-consuming
+
 both of these tags are mostly vibes-based tbh. if you have a complaint with something being tagged wrong lmk and i'll change it
 
 
