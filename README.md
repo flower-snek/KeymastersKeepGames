@@ -14,6 +14,7 @@ both of these tags are mostly vibes-based tbh. if you have a complaint with some
 #### STATUS: complete, but only briefly playtested
 
 what if pokemon doubles was good? and volleyball? and what if we weren't doing any of that because we just wanted to get some funny colored guys?
+
 rarer beasties, such as starters and ancients (which technically arent rare but have to be metamorphed) are locked behind the difficult tag. keep that in mind when making your yaml!
 
 options: none!
@@ -21,6 +22,7 @@ options: none!
 objectives:
 - catch a raremorph beastie in {region}
 - 🕓 catch (then metamorph, if necessary) a raremorph {beastie}
+
 (as in, don't just take a raremorph webbounce you already had and metamorph it into a raremorph goofsder, get a new one!)
 - ⚠🕓 catch (then metamorph, if necessary) a raremorph (rare_beastie}
 
@@ -58,21 +60,26 @@ objectives:
 #### STATUS: complete, but only briefly playtested
 
 made by someone who can only play online (no clubs close enough :pensive:) but should also work on any offline client or even in person if you want to play with some friends!
+
 NOTE: in this game, things that are tagged time-consuming are VERY luck dependant. keep that in mind when making your yaml!
 
 options: none!
 
 objectives:
 - win a hand using (yaku)
+
 	(yaku) can be: ["Any Yakuhai (Any value wind / dragon triplet)", "Tanyao (All Simples)", "Riichi", "Menzen Tsumo (Fully Concealed Hand)", "Pinfu", "Ippatsu"] 
 	(this is every yaku with over a 10% probability according to tenhou)
 - ⚠ win a hand using (rare yaku)
+
 	(rare yaku) can be: ["Honitsu (Half Flush)", "Toitoi (All Triplets)", "Chiitoitsu (Seven Pairs)", "Ittsuu (Pure Straight)", "Iipeikou (Pure Double Sequence)", "Chanta (Half Outside Hand)", "Sanshoku Doujun (Mixed Triple Sequence)"] 
 	(this is every yaku with between 1% and 10% probability according to tenhou)
 - ⚠🕓 win a hand using (rarer yaku)
+
 	(rarer yaku) can be: ["Chinitsu (Full Flush)", "San ankou (Three Concealed Triplets)", "Junchan (Fully Outside Hand)", "Shousangen (Little Three Dragons)", 
 						"Double Riichi", "Rinshan (After a Kan)", "Haitei Raoyue (Under the Sea)", "Houtei raoyui (Under the River)"] 
 	(this is every yaku with between 0.1% and 1% probability according to tenhou)
+	
 	(note that all these stats are from 4 player games - some are more likely in 3 player, others are harder or are impossible)
 - win a hand with exactly (1-3) dora tiles (red fives, dora, and ura dora (and kita in 3 player) all count!)
 - ⚠ win a hand with exactly (4-6) dora tiles (red fives, dora, and ura dora (and kita in 3 player) all count!)
