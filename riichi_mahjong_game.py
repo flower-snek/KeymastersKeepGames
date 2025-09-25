@@ -4,6 +4,8 @@ from typing import List
 
 from dataclasses import dataclass
 
+from Options import Toggle
+
 from ..game import Game
 from ..game_objective_template import GameObjectiveTemplate
 
@@ -12,7 +14,7 @@ from ..enums import KeymastersKeepGamePlatforms
 
 @dataclass
 class RiichiMahjongArchipelagoOptions:
-    pass
+    riichi_mahjong_include_yakuman: RiichiMahjongIncludeYakuman
 
 
 class RiichiMahjongGame(Game):
@@ -30,7 +32,7 @@ class RiichiMahjongGame(Game):
         return list()
     
     def game_objective_templates(self) -> List[GameObjectiveTemplate]:
-        return [
+        objectives = [
             GameObjectiveTemplate(
                 label="Win a hand using the yaku YAKU",
                 data={"YAKU": (self.common_yaku, 1)},
@@ -109,13 +111,6 @@ class RiichiMahjongGame(Game):
                 weight=3,
             ),
             GameObjectiveTemplate(
-                label="Win a yakuman hand",
-                data={},
-                is_time_consuming=True,
-                is_difficult=True,
-                weight=1,
-            ),
-            GameObjectiveTemplate(
                 label="Win a hand after making 4 calls, leaving a single tile in your hand",
                 data={},
                 is_time_consuming=False,
@@ -165,6 +160,16 @@ class RiichiMahjongGame(Game):
                 weight=2,
             ),
         ]
+        if self.yakuman_enabled():
+            objectives.append(GameObjectiveTemplate(
+                label="Win a yakuman hand",
+                data={},
+                is_time_consuming=True,
+                is_difficult=True,
+                weight=1,
+            ))
+
+        return objectives
     
     @staticmethod
     def common_yaku() -> List[str]:
@@ -194,7 +199,7 @@ class RiichiMahjongGame(Game):
                 "Double Riichi",
                 "Rinshan (After a Kan)",
                 "Haitei Raoyue (Under the Sea)",
-                "Houtei raoyui (Under the River)"]
+                "Houtei Raoyui (Under the River)"]
 
     @staticmethod
     def player_mode() -> List[str]:
@@ -215,3 +220,10 @@ class RiichiMahjongGame(Game):
             "4", "5", "6"
         ]
 
+    @property
+    def yakuman_enabled(self):
+        return self.archipelago_options.riichi_mahjong_include_yakuman
+
+class RiichiMahjongIncludeYakuman(Toggle):
+    """Whether there should be a very rare objective that requires getting a yakuman. This isn't *completely* unreasonable in 3 player, but it can still be frustrating."""
+    display_name = "Riichi Mahjong Include Yakuman"

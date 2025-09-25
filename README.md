@@ -11,7 +11,7 @@ both of these tags are mostly vibes-based tbh. if you have a complaint with some
 
 ## Beastieball (Raremorph Hunt)
 
-#### STATUS: complete, but only briefly playtested
+#### STATUS: complete, but only briefly tested
 
 what if pokemon doubles was good? and volleyball? and what if we weren't doing any of that because we just wanted to get some funny colored guys?
 
@@ -29,7 +29,7 @@ objectives:
 
 ## LUMINES REMASTERED
 
-#### STATUS: complete, but only briefly playtested
+#### STATUS: complete, but only briefly tested
 
 make squares, keep your combo, and listen to some songs that range from good to """"interesting""""
 
@@ -57,13 +57,13 @@ objectives:
 
 ## Riichi Mahjong
 
-#### STATUS: complete, but only briefly playtested
+#### STATUS: complete, but only briefly tested
 
 made by someone who can only play online (no clubs close enough :pensive:) but should also work on any offline client or even in person if you want to play with some friends!
 
 NOTE: in this game, things that are tagged time-consuming are VERY luck dependant. keep that in mind when making your yaml!
 
-options: none!
+options: yakuman objective (the one with an asterisk below; disabled by default)
 
 objectives:
 - win a hand using (yaku)
@@ -89,7 +89,7 @@ objectives:
 - win a haneman or greater hand in 3 player
 - ⚠ win a haneman or greater hand in 4 player
 - ⚠ win a baiman or greater hand in 3 player
-- ⚠🕓 win a yakuman hand
+- ⚠🕓 win a yakuman hand\*
 - win a hand after making 4 calls (leaving a single tile in your hand)
 - win a hand after declaring kan twice
 - win a hand by declaring riichi after another player has already declared riichi
@@ -101,7 +101,7 @@ objectives:
 
 ## Xross Dreams
 
-#### STATUS: complete, but only briefly playtested
+#### STATUS: complete, but only briefly tested
 
 a tag-team vs puzzle game, each character representing a different vs puzzle game. these objectives assume you have completed the story; if you haven't, uh, don't pick this? but also you can disable difficult objectives and you'll probably be fine
 
