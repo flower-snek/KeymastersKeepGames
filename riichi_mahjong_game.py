@@ -222,7 +222,7 @@ class RiichiMahjongGame(Game):
 
     @property
     def yakuman_enabled(self):
-        return self.archipelago_options.riichi_mahjong_include_yakuman
+        return self.archipelago_options.riichi_mahjong_include_yakuman.value
 
 class RiichiMahjongIncludeYakuman(Toggle):
     """Whether there should be a very rare objective that requires getting a yakuman. This isn't *completely* unreasonable in 3 player, but it can still be frustrating."""
