@@ -57,7 +57,7 @@ class XrossDreamsGame(Game):
             ),
             GameObjectiveTemplate(
                 # finale
-                label="Complete the finale using the following character on your team: CHARACTERS",
+                label="Complete the finale using the following character on your team: CHARACTER",
                 data={"CHARACTER": (self.characters, 1)},
                 is_time_consuming=False,
                 is_difficult=True,  # honestly not that hard if you know how to solo as certain characters (*cough* robot) but i'll put it in difficult just to be careful
