@@ -160,7 +160,7 @@ class RiichiMahjongGame(Game):
                 weight=2,
             ),
         ]
-        if self.yakuman_enabled():
+        if self.yakuman_enabled:
             objectives.append(GameObjectiveTemplate(
                 label="Win a yakuman hand",
                 data={},
@@ -222,7 +222,7 @@ class RiichiMahjongGame(Game):
 
     @property
     def yakuman_enabled(self):
-        return self.archipelago_options.riichi_mahjong_include_yakuman.value
+        return bool(self.archipelago_options.riichi_mahjong_include_yakuman.value)
 
 class RiichiMahjongIncludeYakuman(Toggle):
     """Whether there should be a very rare objective that requires getting a yakuman. This isn't *completely* unreasonable in 3 player, but it can still be frustrating."""
