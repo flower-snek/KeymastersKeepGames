@@ -1,7 +1,9 @@
 # KeymastersKeepGames
 welcome to the semi-obscure puzzle game zone (ok fine theres stuff that isnt semi-obscure puzzle games now. whatever.)
 
+
 ⚠ = tagged as difficult
+
 🕓 = tagged as time-consuming
 
 both of these tags are mostly vibes-based tbh. if you have a complaint with something being tagged wrong lmk and i'll change it
@@ -94,7 +96,7 @@ objectives:
 
 #### STATUS: complete, but only briefly playtested
 
-a tag-team vs puzzle game, each character representing a different vs fighting game. these objectives assume you have completed the story; if you haven't, uh, don't pick this? but also you can disable difficult objectives and you'll probably be fine
+a tag-team vs puzzle game, each character representing a different vs puzzle game. these objectives assume you have completed the story; if you haven't, uh, don't pick this? but also you can disable difficult objectives and you'll probably be fine
 
 options: none!
 
